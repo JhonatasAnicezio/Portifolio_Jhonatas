@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export function NavContact() {
   return (
-    <Nav.Field className='flex items-center justify-center text-3xl gap-2 text-gray-400'>
+    <Nav.Field className='flex items-center justify-center text-3xl gap-4 text-gray-400'>
       <Link className='hover:text-black duration-500' href='https://github.com/JhonatasAnicezio'>
         <DiGithubBadge />
       </Link>
