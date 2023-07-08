@@ -1,6 +1,8 @@
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import { NavPages } from '@/components/Nav/NavPages';
+import { NavContact } from '@/components/Nav/NavContact';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +18,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={`flex flex-col gap-7 h-screen items-center justify-center ${inter.className}`}>
+        <NavPages />
+        <main className="flex flex-col p-9 gap-10 items-center w-3/5 border-y border-gray-300">
+          {children}
+        </main>
+        <NavContact />
+      </body>
     </html>
   )
 }
