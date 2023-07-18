@@ -5,14 +5,17 @@ import Link from "next/link";
 
 export function NavContact() {
   return (
-    <Nav.Field className='flex items-center justify-center text-3xl gap-4 text-gray-400'>
-      <Link className='hover:text-black duration-500' href='https://github.com/JhonatasAnicezio'>
+    <Nav.Field className='flex items-center justify-center gap-4 text-gray-400
+        2xl:text-5xl xl:text-4xl lg:text-4xl md:text-3xl sm:text-2xl text-3xl
+      '
+    >
+      <Link target="blank" className='hover:text-black duration-500' href='https://github.com/JhonatasAnicezio'>
         <DiGithubBadge />
       </Link>
-      <Link className='hover:text-blue-700 duration-500' href='https://www.linkedin.com/in/jhonatas-anicezio/'>
+      <Link target="blank" className='hover:text-blue-700 duration-500' href='https://www.linkedin.com/in/jhonatas-anicezio/'>
         <BiLogoLinkedin />
       </Link>
-      <Link className='hover:text-red-600 duration-500' href=''>
+      <Link target="blank" className='hover:text-red-600 duration-500' href=''>
         <BiSolidFile />
       </Link>
     </Nav.Field>
